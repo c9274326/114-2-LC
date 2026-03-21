@@ -24,6 +24,7 @@ public:
             curr->next = prev;
             prev = curr;
             curr = next;
+            
         }
         head->next = reverseKGroup(curr, k);
         return prev;
